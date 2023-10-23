@@ -1,6 +1,6 @@
 import { NetworksUI } from '../networks/primitives/NetworksUI.js';
 //
-import { Navbar } from '../networks/Navbar.js';
+import  Navbar  from '../networks/navbar.js';
 
 // Config prototype size here: 
 let prototypeWidth = 1280;

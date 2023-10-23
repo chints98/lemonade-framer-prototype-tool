@@ -1,7 +1,7 @@
 
 
 
-export class NavBar extends Layer {
+export default class NavBar extends Layer {
     constructor(props) {
         super(props);
         

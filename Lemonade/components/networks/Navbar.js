@@ -18,6 +18,7 @@ export default class NavBar extends Layer {
             y: this.height - 60,
             width: this.width,
             height: 60,
+            borderRadius: 100,
             backgroundColor: 'red',
             html: "Create"
         });
@@ -48,6 +49,7 @@ export default class NavBar extends Layer {
                 y: 60 * i,
                 width: this.width,
                 height: 60,
+                borderRadius: 100,
                 backgroundColor: "transparent",
                 html: navItems[i]
             });

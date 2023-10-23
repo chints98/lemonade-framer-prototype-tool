@@ -1,16 +1,17 @@
 // Lemonade, a base template of good old Framer
 
 import { LemonUI } from './components/LemonUI.js';
+import { NetworksUI } from './components/networks/primitives/NetworksUI.js';
 // Uncomment line 5 and line 61, to view the examples.
-// import { Examples } from './components/Examples/Examples.js';
-
+import { Examples } from './components/Examples/Examples.js';
+import {MindsAcct} from './components/Pages/MindsAcct.js';
 // SETUP ===================================
 Framer.Extras.Hints.disable();
 Framer.Defaults.Animation.curve = Spring;
 
 // Config prototype size here: 
-let prototypeWidth = 375;
-let prototypeHeight = 667;
+let prototypeWidth = Screen.width;
+let prototypeHeight = Screen.height;
 
 // Use this layer as the main parent:
 let app = new Layer({
@@ -21,6 +22,9 @@ let app = new Layer({
 });
 
 // WORKSPACE ==========================================
+
+// make the app layer center of the screen
+app.center();
 
 // Main screen, which is added to the App layer.
 let mainscreen = new Layer({
@@ -57,8 +61,10 @@ lemon.onClick(()=>{
 });
 
 
+
+
 // To view the examples, uncomment this line, and the 'import' at the top.
-// Examples.parent = app;
+MindsAcct.parent = app;
 
 
 

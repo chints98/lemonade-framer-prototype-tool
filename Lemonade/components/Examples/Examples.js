@@ -1,5 +1,7 @@
 // Examples, for Lemonade.
 
+
+
 import { LemonUI } from '../LemonUI.js';
 import { Header } from './Header.js';
 import { MenuButton } from './MenuButton.js';
@@ -7,8 +9,8 @@ import { Ticker } from './Ticker.js';
 import { LottieLayer } from './Lottie-Framer/Lottie-Framer.js';
 
 // Config prototype size here: 
-let prototypeWidth = 375;
-let prototypeHeight = 677;
+let prototypeWidth = 1280;
+let prototypeHeight = 982;
 
 // This is the FlowComponent that will hold all the screens.
 export let Examples = new FlowComponent();
@@ -33,6 +35,8 @@ export let Examples = new FlowComponent();
 let homescreen = new Layer({
 	name: "Screen Home", y: 0,
 	width: prototypeWidth, height: prototypeHeight,
+	x: Align.center(),
+	y: Align.center(),
 	backgroundColor: 'white',
 	parent: Examples
 });
